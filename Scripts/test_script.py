@@ -15,7 +15,7 @@ def test_registrar_usuario():
     Sign_in_button = driver.find_element_by_xpath("//*[contains(text(), 'Sign in')]").click()
     WebDriverWait(driver, timeout=20).until(lambda d: driver.find_element_by_xpath("//*[contains(text(), 'Create an account')]"))
     time.sleep(3)
-    Email_address = driver.find_element_by_id("email_create").send_keys("sammy2233@gmail.com")
+    Email_address = driver.find_element_by_id("email_create").send_keys("sammy2235@gmail.com")
     time.sleep(3)
     Create_an_account_btn = driver.find_element_by_id("SubmitCreate").click()
     WebDriverWait(driver, timeout=20).until(lambda d: driver.find_element_by_xpath("//h3[contains(text(),'Your personal information')]"))
